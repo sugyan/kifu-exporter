@@ -1,0 +1,3 @@
+runtime: ruby25
+
+entrypoint: bundle exec rackup -s Puma -p $PORT

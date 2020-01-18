@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      input[type="url"] {
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="GET" action="kifu">
+      <input type="url" name="url" placeholder="https://shogiwars.heroz.jp/games/****" pattern="^https:\/\/shogiwars\.heroz\.jp\/games\/.*" required />
+      <input type="radio" name="format" value="kif">kif
+      <input type="radio" name="format" value="csa" checked>csa
+      <input type="submit">
+    </form>
+  </body>
+</html>
