@@ -11,7 +11,7 @@ class App < Sinatra::Base
 
   get '/kifu' do
     doc = Nokogiri::HTML(open(params['url']))
-    data = JSON.parse(doc.search("[@data-react-class='games/Show']").attribute('data-react-props'))
+    data = JSON.parse(doc.search("[@data-react-class='Show']").attribute('data-react-props'))
     game = data['gameHash']
 
     lines = []
